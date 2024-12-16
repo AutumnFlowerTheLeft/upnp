@@ -1,4 +1,4 @@
-module upnp
+module github.com/AutumnFlowerTheLeft/upnp
 
 go 1.23.2
 

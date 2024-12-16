@@ -1,18 +1,17 @@
 # Go-NAT-PMP
-A Go language for the NAT-PMP internet protocol for port mapping and discovering the external IP address.
-but this is XoRPC plugin, Open Transport.
+使用 *狗浪* 开发的UPNP，NAT-PMP
 
-Qing Connect RPC by Xianglake Studio
+为青联互联RPC通信框架插件，即XoRPC UPNP插件。
 
 XoRPC : https://github.com/qiaoliangXgamemode/XoRPC
-# Get the package
+# 下载包
 
 ```
 go get github.com/AutumnFlowerTheLeft/upnp@v1.0.0
 ```
 
 # Usage
-Create a file main.go with contents:
+创建一个 *main.go* 文件写入以下内容：
 ```
 package main
 
@@ -35,20 +34,21 @@ func main() {
 	upnp.OpenPortMapping(response)
 }
 ```
-
 # Example
-## Getgateway
-Route Getgateway
+## Getgateway 网关
+路由器或者网卡网关获取
 ```
 gwy, e := upnp.Getgateway()
 ```
 
 
-## AddPortMapping
+## AddPortMapping 添加映射端口
 ```
-Getgateway 
-Protocol => tcp/udp
-Port
-MappedExternalPort
-TimeOut
+Getgateway 网关
+Protocol 网络协议 tcp/udp
+Port 端口
+MappedExternalPort 外网端口（通常运营商会随机）
+TimeOut  映射停留时间
 ```
+# 最后
+查看路由器后台 或者 opwrt 后台，UPNP-PMP 端口是否打开。

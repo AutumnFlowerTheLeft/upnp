@@ -1,4 +1,7 @@
 # Go-NAT-PMP
+- en-US [English](README.md)
+- zh_CN [让我们一起说中文](README-ZH.md)
+
 A Go language for the NAT-PMP internet protocol for port mapping and discovering the external IP address.
 but this is XoRPC plugin, Open Transport.
 
